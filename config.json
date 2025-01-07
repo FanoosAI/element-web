@@ -1,0 +1,73 @@
+{
+    "sso_immediate_redirect": true,
+    "sso_allow_existing_users": true,
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "https://matrix-client.matrix.org",
+            "server_name": "Fanoos"
+        }
+    },
+    "branding": {
+        "welcome_background_url": "https://ir.fanoosapp.com/themes/element/img/backgrounds/lake.jpg",
+        "auth_header_logo_url": "https://ir.fanoosapp.com/welcome/images/logo.png",
+        "auth_footer_links": []
+    },
+    "sso_redirect_options": {
+        "immediate": false,
+        "on_welcome_page": false,
+        "on_login_page": false
+    },
+    "disable_custom_urls": true,
+    "disable_guests": false,
+    "disable_login_language_selector": true,
+    "disable_3pid_login": true,
+    "force_verification": false,
+    "brand": "Fanoos",
+    "integrations_ui_url": "https://scalar.vector.im/",
+    "integrations_rest_url": "https://scalar.vector.im/api",
+    "integrations_widgets_urls": [
+        "https://scalar.vector.im/_matrix/integrations/v1",
+        "https://scalar.vector.im/api",
+        "https://scalar-staging.vector.im/_matrix/integrations/v1",
+        "https://scalar-staging.vector.im/api",
+        "https://scalar-staging.riot.im/scalar/api"
+    ],
+    "default_widget_container_height": 280,
+    "default_country_code": "fa",
+    "show_labs_settings": false,
+    "features": {},
+    "default_federate": true,
+    "default_theme": "light",
+    "default_language": "fa",
+    "room_directory": {
+        "servers": [
+            "matrix.org"
+        ]
+    },
+    "enable_presence_by_hs_url": {
+        "https://matrix.org": false,
+        "https://matrix-client.matrix.org": false
+    },
+    "setting_defaults": {
+        "breadcrumbs": true,
+        "language": "fa"
+    },
+    "jitsi": {
+        "preferred_domain": "meet.element.io"
+    },
+    "element_call": {
+        "url": "https://call.element.io",
+        "participant_limit": 8,
+        "brand": "Element Call"
+    },
+    "oidc_metadata": {
+        "client_uri": "https://example.com",
+        "logo_uri": "https://example.com/logo.png",
+        "tos_uri": "https://example.com/tos",
+        "policy_uri": "https://example.com/policy",
+        "contacts": [
+            "support@example.com"
+        ]
+    },
+    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+}
