@@ -1,10 +1,10 @@
 {
-    "sso_immediate_redirect": true,
-    "sso_allow_existing_users": true,
+    "sso_immediate_redirect": false,
+    "sso_allow_existing_users": false,
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://matrix-client.matrix.org",
-            "server_name": "Fanoos"
+            "base_url": "https://quranic.network",
+            "server_name": "quranic.network"
         }
     },
     "branding": {
@@ -17,7 +17,7 @@
         "on_welcome_page": false,
         "on_login_page": false
     },
-    "disable_custom_urls": true,
+    "disable_custom_urls": false,
     "disable_guests": false,
     "disable_login_language_selector": true,
     "disable_3pid_login": true,
