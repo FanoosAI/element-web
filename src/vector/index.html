@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en" style="height: 100%;">
+<html dir="rtl" lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
-    <title>Fanoos</title>
+    <title>فانوس</title>
     <link rel="apple-touch-icon" sizes="57x57" href="<%= require('../../res/vector-icons/apple-touch-icon.png') %>">
     <link rel="apple-touch-icon" sizes="60x60" href="<%= require('../../res/vector-icons/apple-touch-icon.png') %>">
     <link rel="apple-touch-icon" sizes="72x72" href="<%= require('../../res/vector-icons/apple-touch-icon.png') %>">
@@ -25,11 +25,11 @@
     <meta property="og:image" content="<%= og_image_url %>" />
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'none';
-        style-src 'self' 'unsafe-inline' <%= csp_extra_source %>;
+        style-src 'self' 'unsafe-inline' * <%= csp_extra_source %>;
         script-src 'self' 'wasm-unsafe-eval' https://www.recaptcha.net/recaptcha/ https://www.gstatic.com/recaptcha/ <%= csp_extra_source %>;
         img-src * blob: data:;
         connect-src * blob:;
-        font-src 'self' data: <%= csp_extra_source %>;
+        font-src *;
         media-src * blob: data:;
         child-src * blob: data:;
         worker-src 'self' blob: <%= csp_extra_source %>;
@@ -56,6 +56,7 @@
         <% }
     } %>
 
+    <link rel="stylesheet" href="https://fanoosai.github.io/element-web-assets/custom.css">
   </head>
   <body style="height: 100%; margin: 0;">
     <noscript>Sorry, Element requires JavaScript to be enabled.</noscript> <!-- TODO: Translate this? -->
@@ -90,14 +91,23 @@
     <div id="mx_Dialog_Container"></div>
     <div id="mx_ContextualMenu_Container"></div>
 
-
+    
     <style>
-        .mx_Header_title::after,
-        .mx_Header_subtitle,
-        .mx_AuthBody_centered,
-        .mx_SSOButtons,
-        .mx_AuthBody_centered{
-            display: none;
+        @font-face {
+            font-family: IRANSans;
+            font-style: normal;
+            font-weight: 900;
+            src: url('https://fanoosai.github.io/element-web-assets/IRANSansWeb.eot');
+            src: url('https://fanoosai.github.io/element-web-assets/IRANSansWeb.eot') format('embedded-opentype'),
+                /* IE6-8 */
+                url('https://fanoosai.github.io/element-web-assets/IRANSansWeb.woff2') format('woff2'),
+                /* FF39+,Chrome36+, Opera24+*/
+                url('https://fanoosai.github.io/element-web-assets/IRANSansWeb.woff') format('woff'),
+                /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+                url('https://fanoosai.github.io/element-web-assets/IRANSansWeb.ttf') format('truetype');
+        }
+        *{
+            font-family: IRANSans !important;
         }
     </style>
   </body>
