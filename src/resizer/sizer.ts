@@ -93,12 +93,21 @@ export default class Sizer {
         @return {number} the distance between the cursor and the edge of the container,
             along the applicable axis (vertical or horizontal)
     */
+    // public offsetFromEvent(event: MouseEvent): number {
+    //     const pos = this.vertical ? event.pageY : event.pageX;
+    //     if (this.reverse) {
+    //         return this.getPageOffset() + this.getTotalSize() - pos;
+    //     } else {
+    //         return pos - this.getPageOffset();
+    //     }
+    // }
     public offsetFromEvent(event: MouseEvent): number {
-        const pos = this.vertical ? event.pageY : event.pageX;
+        const pos = this.vertical ? event.pageY : (window.innerWidth - event.pageX);
         if (this.reverse) {
             return this.getPageOffset() + this.getTotalSize() - pos;
         } else {
-            return pos - this.getPageOffset();
+            return pos - 68
         }
     }
+    
 }
