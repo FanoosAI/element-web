@@ -17,6 +17,7 @@ import AccessibleButton from "../elements/AccessibleButton";
 import SdkConfig from "../../../SdkConfig";
 import Field from "../elements/Field";
 import StyledRadioButton from "../elements/StyledRadioButton";
+
 import TextWithTooltip from "../elements/TextWithTooltip";
 import withValidation, { IFieldState, IValidationResult } from "../elements/Validation";
 import { ValidatedServerConfig } from "../../../utils/ValidatedServerConfig";
@@ -44,6 +45,8 @@ export default class ServerPickerDialog extends React.PureComponent<IProps, ISta
         const config = SdkConfig.get();
         this.defaultServer = config["validated_server_config"]!;
         const { serverConfig } = this.props;
+        
+       
 
         let otherHomeserver = "";
         if (!serverConfig.isDefault) {
@@ -57,6 +60,16 @@ export default class ServerPickerDialog extends React.PureComponent<IProps, ISta
         this.state = {
             defaultChosen: serverConfig.isDefault,
             otherHomeserver,
+            servers:[
+                "https://ebad.quranic.network",
+                "https://motaghin.quranic.network",
+                "https://parsi.ai",
+                "https://llm-lab.org",
+                "https://arabic.llm-lab.org",
+                "https://aima.llm-lab.org",
+                "https://nlp.llm-lab.org",
+                "https://bots.llm-lab.org"
+            ],
         };
     }
 
@@ -203,6 +216,21 @@ export default class ServerPickerDialog extends React.PureComponent<IProps, ISta
                     >
                         {defaultServerName}
                     </StyledRadioButton>
+
+                    <hr />
+
+                    {this.state.servers.map((server, index) => (
+                        <StyledRadioButton
+                            key={index}
+                            className="alterServer"
+                            name="selectedServer"
+                            value={server}
+                            checked={this.state.selectedServer === server}
+                            onChange={this.onHomeserverChange}
+                        >
+                            {server}
+                        </StyledRadioButton>
+                    ))}
 
                     <StyledRadioButton
                         name="defaultChosen"
