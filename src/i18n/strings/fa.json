@@ -371,6 +371,7 @@
         "labs": "قابلیت‌های بتا",
         "legal": "قانونی",
         "light": "روشن",
+        "location": "موقعیت مکانی",
         "low_priority": "اولویت کم",
         "matrix": "ماتریکس",
         "microphone": "میکروفون",
@@ -453,23 +454,48 @@
             "user_a11y": "تکمیل خودکار کاربر",
             "user_description": "کاربران"
         },
-        "close_sticker_picker": "پنهان سازی استیکرها",
+        "close_sticker_picker": "پنهان کردن استیکرها",
         "edit_composer_label": "ویرایش پیام",
         "format_bold": "پررنگ",
         "format_code_block": "بلوک کد",
-        "format_inline_code": "کد",
-        "format_italics": "مورب",
-        "format_strikethrough": "خط روی متن",
-        "no_perms_notice": "شما اجازه ارسال در این اتاق را ندارید",
-        "placeholder": "ارسال یک پیام…",
-        "placeholder_encrypted": "ارسال پیام رمزگذاری شده …",
-        "placeholder_reply": "ارسال پاسخ …",
-        "placeholder_reply_encrypted": "ارسال پاسخ رمزگذاری شده …",
-        "poll_button_no_perms_title": "اجازه نیاز است",
-        "replying_title": "پاسخ دادن",
-        "room_upgraded_link": "گفتگو در اینجا ادامه دارد.",
-        "room_upgraded_notice": "این اتاق جایگزین شده‌است و دیگر فعال نیست.",
-        "send_button_title": "ارسال پیام"
+        "format_decrease_indent": "کاهش تو رفتگی",
+        "format_increase_indent": "افزایش تو رفتگی",
+        "format_inline_code": "کد درون‌خطی",
+        "format_insert_link": "افزودن پیوند",
+        "format_italic": "کج",
+        "format_italics": "کج",
+        "format_link": "پیوند",
+        "format_ordered_list": "فهرست شماره‌گذاری‌شده",
+        "format_strikethrough": "خط‌خورده",
+        "format_underline": "زیرخط‌دار",
+        "format_unordered_list": "فهرست نقطه‌گذاری‌شده",
+        "formatting_toolbar_label": "نوار ابزار قالب‌بندی",
+        "link_modal": {
+            "link_field_label": "پیوند",
+            "text_field_label": "متن",
+            "title_create": "ایجاد پیوند",
+            "title_edit": "ویرایش پیوند"
+        },
+        "mode_plain": "پنهان کردن قالب‌بندی",
+        "mode_rich_text": "نمایش قالب‌بندی",
+        "no_perms_notice": "شما اجازه ارسال پیام در این اتاق را ندارید",
+        "placeholder": "پیامی ارسال کنید…",
+        "placeholder_encrypted": "ارسال پیام رمزگذاری‌شده…",
+        "placeholder_reply": "ارسال پاسخ…",
+        "placeholder_reply_encrypted": "ارسال پاسخ رمزگذاری‌شده…",
+        "placeholder_thread": "پاسخ به رشته…",
+        "placeholder_thread_encrypted": "پاسخ به رشته رمزگذاری‌شده…",
+        "poll_button": "نظرسنجی",
+        "poll_button_no_perms_description": "شما اجازه شروع نظرسنجی در این اتاق را ندارید.",
+        "poll_button_no_perms_title": "نیاز به مجوز",
+        "replying_title": "در حال پاسخ دادن",
+        "room_upgraded_link": "گفت‌وگو در اینجا ادامه دارد.",
+        "room_upgraded_notice": "این اتاق جایگزین شده و دیگر فعال نیست.",
+        "send_button_title": "ارسال پیام",
+        "send_button_voice_message": "ارسال پیام صوتی",
+        "send_voice_message": "ارسال پیام صوتی",
+        "stop_voice_message": "توقف ضبط",
+        "voice_message_button": "پیام صوتی"
     },
     "create_room": {
         "encryption_forced": "سرور شما به گونه‌ای تنظیم شده‌است که فعال بودن رمزنگاری سرتاسر در اتاق‌های خصوصی اجباری می‌باشد.",
@@ -1153,7 +1179,10 @@
         "unknown_for": "ناشناخته به مدت %(duration)s"
     },
     "quick_settings": {
-        "all_settings": "همه تنظیمات"
+        "all_settings": "همه تنظیمات",
+        "metaspace_section": "سنجاق به نوار کناری",
+        "sidebar_settings": "گزینه‌های بیشتر",
+        "title": "تنظیمات سریع"
     },
     "quit_warning": {
         "call_in_progress": "به نظر می‌رسد شما در میانه‌ی یک تماس هستید، آیا از خروج اطمینان دارید؟",
@@ -1505,6 +1534,10 @@
         }
     },
     "settings": {
+        "account": {
+            "dialog_title": "<strong>تنظیمات:</strong> حساب کاربری",
+            "title": "حساب کاربری"
+        },
         "all_rooms_home": "تمامی اتاق ها را در صفحه ی خانه نشان بده",
         "all_rooms_home_description": "تمام اتاق هایی که در آن ها عضو هستید در صفحه ی خانه ظاهر خواهند شد.",
         "always_show_message_timestamps": "همیشه مهر زمان‌های پیام را نشان بده",
