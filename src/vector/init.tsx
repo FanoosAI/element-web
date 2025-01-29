@@ -40,6 +40,8 @@ export function preparePlatform(): void {
 }
 
 export function setupLogStorage(): Promise<void> {
+    window.localStorage.setItem("mx_local_settings", '{"language":"fa"}');
+
     if (SdkConfig.get().bug_report_endpoint_url) {
         return initRageshakeStore();
     }
