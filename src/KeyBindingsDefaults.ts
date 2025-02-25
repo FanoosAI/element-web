@@ -59,7 +59,7 @@ const messageComposerBindings = (): KeyBinding[] => {
             action: KeyBindingAction.NewLine,
             keyCombo: {
                 key: Key.ENTER,
-                shiftKey: true,
+                ctrlOrCmdKey: true,
             },
         });
         if (IS_MAC) {
